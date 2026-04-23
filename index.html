@@ -1,15 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Clear Shot Raw</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLEARSHOT RAW</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #050505;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 70px 20px 50px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      letter-spacing: 4px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: #c7c7c7;
+      max-width: 650px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #ffffff;
+      color: #000000;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+
+    .portfolio {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px 70px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+      background: #111111;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 10px 20px 70px;
+      text-align: center;
+    }
+
+    .about p {
+      color: #c7c7c7;
+      font-size: 1rem;
+    }
+
+    .booking {
+      text-align: center;
+      padding: 10px 20px 90px;
+    }
+
+    .booking p {
+      color: #c7c7c7;
+      margin-bottom: 22px;
+    }
+
+    .socials {
+      margin-top: 18px;
+    }
+
+    .socials a {
+      color: #c7c7c7;
+      font-size: 0.98rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 15px 36px;
+      color: #777777;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        min-height: 68vh;
+        padding-top: 60px;
+      }
+
+      .hero h1 {
+        font-size: 2.7rem;
+        letter-spacing: 2px;
+      }
+
+      .hero p {
+        font-size: 0.98rem;
+      }
+
+      .gallery img {
+        height: 240px;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
-<body style="background:black; color:white; text-align:center; font-family:sans-serif;">
+<body>
 
-<h1>Clear Shot Raw</h1>
-<p>Photography Portfolio</p>
+  <section class="hero">
+    <h1>CLEARSHOT RAW</h1>
+    <p>Sharp. Clean. Cinematic.</p>
+    <a class="btn" href="#booking">BOOK A SHOOT</a>
+  </section>
 
-<h2>Book Me</h2>
-<p>DM me on Instagram or email me to book.</p>
+  <section class="portfolio">
+    <h2 class="section-title">PORTFOLIO</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="CLEARSHOT RAW photo 1">
+      <img src="photo2.jpg" alt="CLEARSHOT RAW photo 2">
+      <img src="photo3.jpg" alt="CLEARSHOT RAW photo 3">
+      <img src="photo4.jpg" alt="CLEARSHOT RAW photo 4">
+      <img src="photo5.jpg" alt="CLEARSHOT RAW photo 5">
+      <img src="photo6.jpg" alt="CLEARSHOT RAW photo 6">
+    </div>
+  </section>
+
+  <section class="about">
+    <h2 class="section-title">ABOUT</h2>
+    <p>
+      CLEARSHOT RAW delivers bold photography with sharp detail, strong energy,
+      and a clean cinematic look. Built for standout sports, portraits, and
+      creative shoots.
+    </p>
+  </section>
+
+  <section class="booking" id="booking">
+    <h2 class="section-title">BOOK ME</h2>
+    <p>Ready to shoot? Reach out and let’s make something hard.</p>
+    <a class="btn" href="mailto:YOUREMAILHERE@gmail.com?subject=Booking Inquiry">EMAIL ME</a>
+
+    <div class="socials">
+      <a href="https://instagram.com/YOURINSTAGRAMHERE" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 CLEARSHOT RAW
+  </footer>
 
 </body>
 </html>
