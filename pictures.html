@@ -79,7 +79,6 @@
     }
 
     .card {
-      position: relative;
       height: 220px;
       border-radius: 24px;
       display: flex;
@@ -87,24 +86,14 @@
       padding: 20px;
       text-decoration: none;
       color: var(--cream);
-      overflow: hidden;
 
       border: 1px solid rgba(255,255,255,0.12);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
 
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      background: rgba(255,255,255,0.04);
 
       transition: transform 0.25s ease, filter 0.25s ease;
-    }
-
-    .card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.2));
     }
 
     .card:hover {
@@ -113,27 +102,8 @@
     }
 
     .card-label {
-      position: relative;
-      z-index: 1;
       font-size: 1.5rem;
       font-weight: 700;
-    }
-
-    /* ✅ YOUR IMAGE FILES */
-    .sports {
-      background-image: url("sports-previewone.png");
-    }
-
-    .events {
-      background-image: url("events-previewone.png");
-    }
-
-    .cars {
-      background-image: url("cars-previewone.png");
-    }
-
-    .portraits {
-      background-image: url("portraits-previewone.png");
     }
 
     @media (max-width: 600px) {
@@ -155,19 +125,19 @@
     <p class="subtext">Choose a category</p>
 
     <div class="grid">
-      <a href="sports.html" class="card sports">
+      <a href="sports.html" class="card">
         <div class="card-label">SPORTS</div>
       </a>
 
-      <a href="events.html" class="card events">
+      <a href="events.html" class="card">
         <div class="card-label">EVENTS</div>
       </a>
 
-      <a href="cars.html" class="card cars">
+      <a href="cars.html" class="card">
         <div class="card-label">CARS</div>
       </a>
 
-      <a href="portraits.html" class="card portraits">
+      <a href="portraits.html" class="card">
         <div class="card-label">PORTRAITS</div>
       </a>
     </div>
