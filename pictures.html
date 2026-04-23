@@ -32,16 +32,25 @@
       --muted-cream: rgba(244, 239, 230, 0.56);
     }
 
-    html, body {
+    html {
       width: 100%;
       min-height: 100%;
       margin: 0;
       padding: 0;
-      background: #0b0c0b;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(244,239,230,0.08), transparent 25%),
+        radial-gradient(circle at 80% 80%, rgba(168,180,163,0.08), transparent 25%),
+        linear-gradient(135deg, var(--bg-1), var(--bg-4));
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
     }
 
     body {
+      width: 100%;
       min-height: 100dvh;
+      margin: 0;
+      padding: 0;
       font-family: "Inter", sans-serif;
       color: var(--cream);
       overflow-x: hidden;
@@ -49,6 +58,9 @@
         radial-gradient(circle at 20% 20%, rgba(244,239,230,0.08), transparent 25%),
         radial-gradient(circle at 80% 80%, rgba(168,180,163,0.08), transparent 25%),
         linear-gradient(135deg, var(--bg-1), var(--bg-4));
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
     }
 
     .page {
@@ -95,7 +107,7 @@
     }
 
     .card {
-      height: 220px;
+      min-height: 220px;
       border-radius: 24px;
       display: flex;
       align-items: flex-end;
